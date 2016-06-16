@@ -61,12 +61,12 @@ $(function() {
     /* GA events */
     $("#windows-download-link").click(function() {
         var arch = $("#windows-select option:selected").data("arch");
-        GAEvent("Download", "download_selection", "Download Windows " + arch);
+        GAEvent("Download", "download_selection", "Download Windows (" + arch + ")");
     });
 
     $("#linux-download-link").click(function() {
         var arch = $("#linux-select option:selected").data("arch");
-        GAEvent("Download", "download_selection", "Download Linux " + arch);
+        GAEvent("Download", "download_selection", "Download Linux (" + arch + ")");
     });
 
     $("#mac-download-link").click(function() {
